@@ -1,0 +1,50 @@
+.parent {
+  background-color: #9d88d3;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.child {
+   background-color: transparent;
+   padding: 20px;
+}
+
+button {
+   margin:5px; 
+   padding:10px; 
+   font-size:16px; 
+   border:none; 
+   cursor:pointer; 
+   background-color: #574f84;
+   color: white;
+   font-weight: bold;
+   border-radius: 10px;
+   
+}
+
+button:hover {
+   opacity: 0.7;
+}
+
+.animated-gif-inc {
+  animation: moveLeft 1s linear;
+  position: absolute;
+  left: 0;
+}
+
+@keyframes moveLeft {
+  0% { left: 0; }
+  100% { left: 100%; }
+}
+
+.animated-gif-dec {
+  animation: moveRight 1s linear;
+  position: absolute;
+  right: 0;
+}
+
+@keyframes moveRight {
+  0% { right: 0; }
+  100% { right: 100%; }
+}
